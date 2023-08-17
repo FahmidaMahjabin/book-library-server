@@ -1,5 +1,5 @@
 import express from 'express'
-import userRoute from '../module/users/users.route'
+import bookRoute from '../module/book/book.route'
 import { academicSemesterRute } from '../module/academicSemester/academicSemester.route'
 import academicFacultyRoute from '../module/academicFaculty/academicFaculty.route'
 
@@ -12,7 +12,7 @@ import { authRoutes } from '../module/auth/auth.route'
 const routes = express.Router()
 
 const appRoutes = [
-  { path: '/users', route: userRoute },
+  { path: '/book', route: bookRoute },
   { path: '/academic-semester', route: academicSemesterRute.router },
   {
     path: '/academic-faculty',

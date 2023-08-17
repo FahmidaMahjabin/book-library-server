@@ -1,0 +1,50 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "D:\\level-2-private-projects\\book-library-server\\logs\\winston\\error\\.e426b39c1afa6a7981c2b1e4f1a408bb6fde23a8-audit.json",
+    "files": [
+        {
+            "date": 1692198616769,
+            "name": "D:\\level-2-private-projects\\book-library-server\\logs\\winston\\error\\uw-2023-08-16-10.log",
+            "hash": "79b34c47c68915a25e1dc943dfc194cb79e90c2a2ba7c4921fde4cde5b241475"
+        },
+        {
+            "date": 1692201665057,
+            "name": "D:\\level-2-private-projects\\book-library-server\\logs\\winston\\error\\uw-2023-08-16-11.log",
+            "hash": "c89867ddd4dc0c67bd10ba6db0618a7844a4735f8d9bc378aa76475f0c4acfaa"
+        },
+        {
+            "date": 1692206180122,
+            "name": "D:\\level-2-private-projects\\book-library-server\\logs\\winston\\error\\uw-2023-08-16-12.log",
+            "hash": "14b7608d90bb0d94b0fa2fde475e88d4a9e8a950522363ae460c72be00486a3e"
+        },
+        {
+            "date": 1692233300563,
+            "name": "D:\\level-2-private-projects\\book-library-server\\logs\\winston\\error\\uw-2023-08-16-19.log",
+            "hash": "a4b0297478d70d41281e0bab5674a1f48133cfba3c505f64679ccfdcabd7e13d"
+        },
+        {
+            "date": 1692234697894,
+            "name": "D:\\level-2-private-projects\\book-library-server\\logs\\winston\\error\\uw-2023-08-16-20.log",
+            "hash": "aa67f770da29d90d415728c26b4df9c8745944bf223ea5ac79dcb6e7612ed3d4"
+        },
+        {
+            "date": 1692238173060,
+            "name": "D:\\level-2-private-projects\\book-library-server\\logs\\winston\\error\\uw-2023-08-16-21.log",
+            "hash": "29cd011ee29b75a25135f07b3f755a52bb6518ee9e9896c7117231731134d75b"
+        },
+        {
+            "date": 1692241728528,
+            "name": "D:\\level-2-private-projects\\book-library-server\\logs\\winston\\error\\uw-2023-08-16-22.log",
+            "hash": "4e5f9b21307ba29eb030127d867e1bc10036966ed60f7acbfc2f596ea4f38346"
+        },
+        {
+            "date": 1692247314199,
+            "name": "D:\\level-2-private-projects\\book-library-server\\logs\\winston\\error\\uw-2023-08-16-23.log",
+            "hash": "117621cf28a08191713d1a8dde4a94e49bb0988b760cdb50088d354caefc4400"
+        }
+    ],
+    "hashType": "sha256"
+}

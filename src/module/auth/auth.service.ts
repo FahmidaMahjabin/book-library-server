@@ -1,6 +1,6 @@
 import httpStatus from 'http-status'
 import { ApiError } from '../../errrorHandlers/ApiErrorHandler'
-import { User } from '../users/users.model'
+import { User } from '../book/book.model'
 import { ILoginData, IRefreshToken, loginResponse } from './auth.interface'
 import bcrypt from 'bcrypt'
 import jwt, { Secret } from 'jsonwebtoken'

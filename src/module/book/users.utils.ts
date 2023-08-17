@@ -1,4 +1,4 @@
-import { User } from './users.model'
+import { User } from './book.model'
 import { logger } from '../../shared/logger'
 import { IAcademicSemester } from '../academicSemester/academicSemester.interface'
 

@@ -5,7 +5,7 @@ import {
   Ipagination,
 } from '../../interfaces/pagination'
 import { errorLogger } from '../../shared/logger'
-import { User } from '../users/users.model'
+import { User } from '../book/book.model'
 import { searchableFields } from './faculty.constant'
 import { IFaculty, IFacultyFilters } from './faculty.interface'
 import { Faculty } from './faculty.model'

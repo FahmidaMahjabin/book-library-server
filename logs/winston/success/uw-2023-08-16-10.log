@@ -1,0 +1,8 @@
+Wed Aug 16 2023 10:10:17 [uw-success] error: error: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.
+Wed Aug 16 2023 10:25:52 [uw-success] info: Example app listening on port undefined
+Wed Aug 16 2023 10:27:18 [uw-success] info: Example app listening on port 5000
+Wed Aug 16 2023 10:30:2 [uw-success] info: Example app listening on port 5000
+Wed Aug 16 2023 10:35:39 [uw-success] info: Example app listening on port 5000
+Wed Aug 16 2023 10:52:13 [uw-success] info: Example app listening on port 5000
+Wed Aug 16 2023 10:55:22 [uw-success] info: Example app listening on port 5000
+Wed Aug 16 2023 10:56:44 [uw-success] info: Example app listening on port 5000
