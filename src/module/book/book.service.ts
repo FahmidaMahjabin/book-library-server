@@ -1,4 +1,4 @@
-import { IBook } from './book.interface'
+import { IBook, IBookFilter } from './book.interface'
 import { Book } from './book.model'
 import { createAdminId, createFacultyId, createStudentId } from './users.utils'
 import config from '../../config/index'
@@ -16,15 +16,44 @@ import { Admin } from '../admin/admin.model'
 import { IAcademicSemester } from '../academicSemester/academicSemester.interface'
 import bcrypt from 'bcrypt'
 import { ObjectId } from 'mongodb'
+import { IResponseForPagination } from '../../interfaces/pagination'
+import { searchableFields } from './book.constant'
 const addBook = async (book: IBook): Promise<IBook | null> => {
   const result = await Book.create(book)
 
   return result
 }
 
-const getAllBooks = async () => {
-  const result = await Book.find({}).lean()
-  // console.log('all users:', result)
+const getAllBooks = async (filters: IBookFilter): Promise<IBook[]> => {
+  const { searchTerm, ...filterableFields } = filters
+  console.log('filterableFields:', filterableFields)
+  const andConditions = []
+
+  // add searchTerm to the andCondition
+  if (searchTerm) {
+    andConditions.push({
+      $or: searchableFields.map(field => ({
+        [field]: {
+          $regex: searchTerm,
+          $options: 'i',
+        },
+      })),
+    })
+  }
+
+  if (Object.keys(filterableFields).length) {
+    andConditions.push({
+      $or: Object.entries(filterableFields).map(([field, value]) => ({
+        [field]: value,
+      })),
+    })
+  }
+  console.log('andConditions:', andConditions)
+
+  // search condition
+  const whereCondition = andConditions.length > 0 ? { $and: andConditions } : {}
+  const result = await Book.find(whereCondition)
+
   return result
 }
 const getSingleBook = async (id: ObjectId) => {

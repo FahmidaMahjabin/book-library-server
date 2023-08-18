@@ -10,11 +10,7 @@ export type IBook = {
   publicationDate: string
   reviews?: string[]
 }
-// export type IBookMethod = {
-//   isUserExist(id: string): Promise<Partial<IBook>>
-//   isPasswordMatch(
-//     givenPassword: string,
-//     savedPassword: string
-//   ): Promise<boolean>
-// }
+export type IBookFilter = {
+  searchTerm?: string
+}
 export type bookModel = Model<IBook, Record<string, never>>

@@ -5,6 +5,8 @@ import { catchAsync } from '../../shared/catchAsync'
 import { sendResponse } from '../../shared/sendResponse'
 import { IBook } from './book.interface'
 import { ObjectId } from 'mongodb'
+import { mapReqQuerysProperty } from '../../shared/pick'
+import { filterableFields, paginationFields } from './book.constant'
 
 const addBookToDB: RequestHandler = catchAsync(
   async (req: Request, res: Response, next: NextFunction) => {
@@ -53,7 +55,11 @@ const deleteBook: RequestHandler = catchAsync(
 
 const getAllBooks: RequestHandler = catchAsync(
   async (req: Request, res: Response, next: NextFunction) => {
-    const result = await bookServices.getAllBooks()
+    const filters = mapReqQuerysProperty(req.query, filterableFields)
+
+    console.log('filters:', filters)
+
+    const result = await bookServices.getAllBooks(filters)
     sendResponse<IBook[]>(res, {
       statusCode: 200,
       success: true,

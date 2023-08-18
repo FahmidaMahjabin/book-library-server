@@ -44,6 +44,21 @@
             "date": 1692247314195,
             "name": "D:\\level-2-private-projects\\book-library-server\\logs\\winston\\success\\uw-2023-08-16-23.log",
             "hash": "7c1361ddb60dd2b1fa9a3c4461fcfb878d70d4b400ba4383e6f4e0acc10aba22"
+        },
+        {
+            "date": 1692314840832,
+            "name": "D:\\level-2-private-projects\\book-library-server\\logs\\winston\\success\\uw-2023-08-17-18.log",
+            "hash": "37be723ff4b9c377f9cd96928bc1c128dcfec412af5b55dd5158e66d7b5be27d"
+        },
+        {
+            "date": 1692320078697,
+            "name": "D:\\level-2-private-projects\\book-library-server\\logs\\winston\\success\\uw-2023-08-17-19.log",
+            "hash": "2fc2c9d2992ea52f5a2362500d5519db4003287f426e807420499d7ec809ba94"
+        },
+        {
+            "date": 1692320423383,
+            "name": "D:\\level-2-private-projects\\book-library-server\\logs\\winston\\success\\uw-2023-08-17-20.log",
+            "hash": "9fbee352cc02c912c0b7a3d6cced74f88a5a1f20e12683bcfdc208a5aa4d13e3"
         }
     ],
     "hashType": "sha256"
