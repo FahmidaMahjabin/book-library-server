@@ -1,6 +1,6 @@
 import { NextFunction, Request, RequestHandler, Response } from 'express'
 import { bookServices } from './book.service'
-import { logger } from '../../shared/logger'
+
 import { catchAsync } from '../../shared/catchAsync'
 import { sendResponse } from '../../shared/sendResponse'
 import { IBook } from './book.interface'

@@ -4,7 +4,7 @@ import { IgenericError } from '../interfaces/errorInterface'
 import { handleValidationError } from '../errrorHandlers/validationErrorHandler'
 import { ApiError } from '../errrorHandlers/ApiErrorHandler'
 import { Error } from 'mongoose'
-import { errorLogger } from '../shared/logger'
+
 import { ZodError } from 'zod'
 import zodErrorHandler from '../errrorHandlers/zodErrorHandler'
 
@@ -17,7 +17,7 @@ export const globalErrorHandler: ErrorRequestHandler = (
   if (config.env === 'development') {
     console.log('global error handler:', err)
   } else {
-    errorLogger.error('global error handler:', err)
+    console.log('global error handler:', err)
   }
   let statusCode = 500
   let message = 'something went wrong'

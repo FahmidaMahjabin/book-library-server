@@ -1,6 +1,5 @@
 import { z } from 'zod'
 
-import { designation } from '../faculty/faculty.constant'
 import { ObjectId } from 'mongodb'
 const createBookZodSchema = z.object({
   body: z.object({

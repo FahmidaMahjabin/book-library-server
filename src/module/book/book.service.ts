@@ -1,19 +1,11 @@
 import { IBook, IBookFilter } from './book.interface'
 import { Book } from './book.model'
-import { createAdminId, createFacultyId, createStudentId } from './users.utils'
+
 import config from '../../config/index'
-import { logger } from '../../shared/logger'
-import { IStudent } from '../student/student.interface'
-import { AcademicSemester } from '../academicSemester/academicSemster.model'
+
 import mongoose from 'mongoose'
 import { ApiError } from '../../errrorHandlers/ApiErrorHandler'
 
-import { Student } from '../student/student.model'
-import { IFaculty } from '../faculty/faculty.interface'
-import { Faculty } from '../faculty/faculty.model'
-import { IAdmin } from '../admin/admin.interface'
-import { Admin } from '../admin/admin.model'
-import { IAcademicSemester } from '../academicSemester/academicSemester.interface'
 import bcrypt from 'bcrypt'
 import { ObjectId } from 'mongodb'
 import { IResponseForPagination } from '../../interfaces/pagination'
@@ -52,7 +44,7 @@ const getAllBooks = async (filters: IBookFilter): Promise<IBook[]> => {
 
   // search condition
   const whereCondition = andConditions.length > 0 ? { $and: andConditions } : {}
-  const result = await Book.find(whereCondition)
+  const result = await Book.find(whereCondition).sort('dec').limit(10)
 
   return result
 }
