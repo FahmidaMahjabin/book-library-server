@@ -51,4 +51,4 @@ Wed Aug 16 2023 19:54:34 [university website] error: global error handler: [
     "message": "Expected date, received string"
   }
 ]
-Wed Aug 16 2023 19:55:31 [university website] error: global error handler: bookService is not defined
+Wed Aug 16 2023 19:55:31 [university website] error: global error handler: productService is not defined

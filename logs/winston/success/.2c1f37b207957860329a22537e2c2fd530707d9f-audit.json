@@ -1,115 +1,115 @@
 {
-    "keep": {
-        "days": true,
-        "amount": 14
+  "keep": {
+    "days": true,
+    "amount": 14
+  },
+  "auditLog": "D:\\level-2-private-projects\\product-library-server\\logs\\winston\\success\\.2c1f37b207957860329a22537e2c2fd530707d9f-audit.json",
+  "files": [
+    {
+      "date": 1692198616764,
+      "name": "D:\\level-2-private-projects\\product-library-server\\logs\\winston\\success\\uw-2023-08-16-10.log",
+      "hash": "d66e89bb4f68f89276d4609e1d8c66d01b07a4b69ad67c46e08800de5ec72a9c"
     },
-    "auditLog": "D:\\level-2-private-projects\\book-library-server\\logs\\winston\\success\\.2c1f37b207957860329a22537e2c2fd530707d9f-audit.json",
-    "files": [
-        {
-            "date": 1692198616764,
-            "name": "D:\\level-2-private-projects\\book-library-server\\logs\\winston\\success\\uw-2023-08-16-10.log",
-            "hash": "d66e89bb4f68f89276d4609e1d8c66d01b07a4b69ad67c46e08800de5ec72a9c"
-        },
-        {
-            "date": 1692201665053,
-            "name": "D:\\level-2-private-projects\\book-library-server\\logs\\winston\\success\\uw-2023-08-16-11.log",
-            "hash": "1746d2d830ca5222fd469b440e5e663442b841246b6119da4356a0178871f91c"
-        },
-        {
-            "date": 1692206180115,
-            "name": "D:\\level-2-private-projects\\book-library-server\\logs\\winston\\success\\uw-2023-08-16-12.log",
-            "hash": "bc97a1a3f6ff637ca8188b63a6de63fcd71b8e11ffd59f2414e8dd207aa1d03e"
-        },
-        {
-            "date": 1692233325377,
-            "name": "D:\\level-2-private-projects\\book-library-server\\logs\\winston\\success\\uw-2023-08-16-19.log",
-            "hash": "29e35d1bb3bf2b20687fde9b8cce95efb0ce958eb152e4e428dbb28fde718474"
-        },
-        {
-            "date": 1692234697890,
-            "name": "D:\\level-2-private-projects\\book-library-server\\logs\\winston\\success\\uw-2023-08-16-20.log",
-            "hash": "933a071036c78777566ca40bb49a2caa57c13f68edd79a4daefd76788abd9a90"
-        },
-        {
-            "date": 1692238173056,
-            "name": "D:\\level-2-private-projects\\book-library-server\\logs\\winston\\success\\uw-2023-08-16-21.log",
-            "hash": "9c4476f65f2796e8711b43b91992bc6fa15b1fef44dc5eff81540156e4cd0af7"
-        },
-        {
-            "date": 1692241728521,
-            "name": "D:\\level-2-private-projects\\book-library-server\\logs\\winston\\success\\uw-2023-08-16-22.log",
-            "hash": "04dde5acc839637e7884b07f0959b168d18661b017011d1ad6bf73337c22d0bd"
-        },
-        {
-            "date": 1692247314195,
-            "name": "D:\\level-2-private-projects\\book-library-server\\logs\\winston\\success\\uw-2023-08-16-23.log",
-            "hash": "7c1361ddb60dd2b1fa9a3c4461fcfb878d70d4b400ba4383e6f4e0acc10aba22"
-        },
-        {
-            "date": 1692314840832,
-            "name": "D:\\level-2-private-projects\\book-library-server\\logs\\winston\\success\\uw-2023-08-17-18.log",
-            "hash": "37be723ff4b9c377f9cd96928bc1c128dcfec412af5b55dd5158e66d7b5be27d"
-        },
-        {
-            "date": 1692320078697,
-            "name": "D:\\level-2-private-projects\\book-library-server\\logs\\winston\\success\\uw-2023-08-17-19.log",
-            "hash": "2fc2c9d2992ea52f5a2362500d5519db4003287f426e807420499d7ec809ba94"
-        },
-        {
-            "date": 1692320423383,
-            "name": "D:\\level-2-private-projects\\book-library-server\\logs\\winston\\success\\uw-2023-08-17-20.log",
-            "hash": "9fbee352cc02c912c0b7a3d6cced74f88a5a1f20e12683bcfdc208a5aa4d13e3"
-        },
-        {
-            "date": 1692398772069,
-            "name": "D:\\level-2-private-projects\\book-library-server\\logs\\winston\\success\\uw-2023-08-18-17.log",
-            "hash": "358c426f6b722c15ef0d819ee685e9e77313e9925e2d2fa7282fcff29fc35e58"
-        },
-        {
-            "date": 1692464941755,
-            "name": "D:\\level-2-private-projects\\book-library-server\\logs\\winston\\success\\uw-2023-08-19-12.log",
-            "hash": "aae4bc3b7075a3d4f54723346b9a61f4a5f150e4849aa6c1f339faa0e82623f0"
-        },
-        {
-            "date": 1692543492553,
-            "name": "D:\\level-2-private-projects\\book-library-server\\logs\\winston\\success\\uw-2023-08-20-09.log",
-            "hash": "1fc915cf720cc7c9b530ae58020cf16d956b7b6126b4f73b5522c3f7ad98a398"
-        },
-        {
-            "date": 1692544376045,
-            "name": "D:\\level-2-private-projects\\book-library-server\\logs\\winston\\success\\uw-2023-08-20-10.log",
-            "hash": "7d993074df0915a977eae8b989bd99e118f60346e71a5b9ba0988f447b98e7da"
-        },
-        {
-            "date": 1692646310168,
-            "name": "D:\\level-2-private-projects\\book-library-server\\logs\\winston\\success\\uw-2023-08-21-14.log",
-            "hash": "1b23af4c0949b28484ee5c730b91ec243348378395fd56d4b088f22728293b9e"
-        },
-        {
-            "date": 1692716653738,
-            "name": "D:\\level-2-private-projects\\book-library-server\\logs\\winston\\success\\uw-2023-08-22-10.log",
-            "hash": "7d57b1bc4d112ddaa44d639f617aa4bc2ad1ff2ac041ecc2d112b1528bda6485"
-        },
-        {
-            "date": 1692722233914,
-            "name": "D:\\level-2-private-projects\\book-library-server\\logs\\winston\\success\\uw-2023-08-22-11.log",
-            "hash": "91fc6159e3c88e8782620ec3b48d319a4741dbb18d9fcf5e077025b1e27ab6b1"
-        },
-        {
-            "date": 1692728874614,
-            "name": "D:\\level-2-private-projects\\book-library-server\\logs\\winston\\success\\uw-2023-08-22-13.log",
-            "hash": "af163c929ff715a9495fa16a1ae2870601bfc5c0a9fe4ceb8fb7bda8a1e74769"
-        },
-        {
-            "date": 1692736233343,
-            "name": "D:\\level-2-private-projects\\book-library-server\\logs\\winston\\success\\uw-2023-08-22-15.log",
-            "hash": "2d1191f7ef135505201e2af185ee177ba16b013b0258603776a28129b66b7b50"
-        },
-        {
-            "date": 1692890462938,
-            "name": "D:\\level-2-private-projects\\book-library-server\\logs\\winston\\success\\uw-2023-08-24-10.log",
-            "hash": "bd4c78688061e8c8834cd95808a680ef057a12549cb3937ee6ea4a01aa9f7398"
-        }
-    ],
-    "hashType": "sha256"
+    {
+      "date": 1692201665053,
+      "name": "D:\\level-2-private-projects\\product-library-server\\logs\\winston\\success\\uw-2023-08-16-11.log",
+      "hash": "1746d2d830ca5222fd469b440e5e663442b841246b6119da4356a0178871f91c"
+    },
+    {
+      "date": 1692206180115,
+      "name": "D:\\level-2-private-projects\\product-library-server\\logs\\winston\\success\\uw-2023-08-16-12.log",
+      "hash": "bc97a1a3f6ff637ca8188b63a6de63fcd71b8e11ffd59f2414e8dd207aa1d03e"
+    },
+    {
+      "date": 1692233325377,
+      "name": "D:\\level-2-private-projects\\product-library-server\\logs\\winston\\success\\uw-2023-08-16-19.log",
+      "hash": "29e35d1bb3bf2b20687fde9b8cce95efb0ce958eb152e4e428dbb28fde718474"
+    },
+    {
+      "date": 1692234697890,
+      "name": "D:\\level-2-private-projects\\product-library-server\\logs\\winston\\success\\uw-2023-08-16-20.log",
+      "hash": "933a071036c78777566ca40bb49a2caa57c13f68edd79a4daefd76788abd9a90"
+    },
+    {
+      "date": 1692238173056,
+      "name": "D:\\level-2-private-projects\\product-library-server\\logs\\winston\\success\\uw-2023-08-16-21.log",
+      "hash": "9c4476f65f2796e8711b43b91992bc6fa15b1fef44dc5eff81540156e4cd0af7"
+    },
+    {
+      "date": 1692241728521,
+      "name": "D:\\level-2-private-projects\\product-library-server\\logs\\winston\\success\\uw-2023-08-16-22.log",
+      "hash": "04dde5acc839637e7884b07f0959b168d18661b017011d1ad6bf73337c22d0bd"
+    },
+    {
+      "date": 1692247314195,
+      "name": "D:\\level-2-private-projects\\product-library-server\\logs\\winston\\success\\uw-2023-08-16-23.log",
+      "hash": "7c1361ddb60dd2b1fa9a3c4461fcfb878d70d4b400ba4383e6f4e0acc10aba22"
+    },
+    {
+      "date": 1692314840832,
+      "name": "D:\\level-2-private-projects\\product-library-server\\logs\\winston\\success\\uw-2023-08-17-18.log",
+      "hash": "37be723ff4b9c377f9cd96928bc1c128dcfec412af5b55dd5158e66d7b5be27d"
+    },
+    {
+      "date": 1692320078697,
+      "name": "D:\\level-2-private-projects\\product-library-server\\logs\\winston\\success\\uw-2023-08-17-19.log",
+      "hash": "2fc2c9d2992ea52f5a2362500d5519db4003287f426e807420499d7ec809ba94"
+    },
+    {
+      "date": 1692320423383,
+      "name": "D:\\level-2-private-projects\\product-library-server\\logs\\winston\\success\\uw-2023-08-17-20.log",
+      "hash": "9fbee352cc02c912c0b7a3d6cced74f88a5a1f20e12683bcfdc208a5aa4d13e3"
+    },
+    {
+      "date": 1692398772069,
+      "name": "D:\\level-2-private-projects\\product-library-server\\logs\\winston\\success\\uw-2023-08-18-17.log",
+      "hash": "358c426f6b722c15ef0d819ee685e9e77313e9925e2d2fa7282fcff29fc35e58"
+    },
+    {
+      "date": 1692464941755,
+      "name": "D:\\level-2-private-projects\\product-library-server\\logs\\winston\\success\\uw-2023-08-19-12.log",
+      "hash": "aae4bc3b7075a3d4f54723346b9a61f4a5f150e4849aa6c1f339faa0e82623f0"
+    },
+    {
+      "date": 1692543492553,
+      "name": "D:\\level-2-private-projects\\product-library-server\\logs\\winston\\success\\uw-2023-08-20-09.log",
+      "hash": "1fc915cf720cc7c9b530ae58020cf16d956b7b6126b4f73b5522c3f7ad98a398"
+    },
+    {
+      "date": 1692544376045,
+      "name": "D:\\level-2-private-projects\\product-library-server\\logs\\winston\\success\\uw-2023-08-20-10.log",
+      "hash": "7d993074df0915a977eae8b989bd99e118f60346e71a5b9ba0988f447b98e7da"
+    },
+    {
+      "date": 1692646310168,
+      "name": "D:\\level-2-private-projects\\product-library-server\\logs\\winston\\success\\uw-2023-08-21-14.log",
+      "hash": "1b23af4c0949b28484ee5c730b91ec243348378395fd56d4b088f22728293b9e"
+    },
+    {
+      "date": 1692716653738,
+      "name": "D:\\level-2-private-projects\\product-library-server\\logs\\winston\\success\\uw-2023-08-22-10.log",
+      "hash": "7d57b1bc4d112ddaa44d639f617aa4bc2ad1ff2ac041ecc2d112b1528bda6485"
+    },
+    {
+      "date": 1692722233914,
+      "name": "D:\\level-2-private-projects\\product-library-server\\logs\\winston\\success\\uw-2023-08-22-11.log",
+      "hash": "91fc6159e3c88e8782620ec3b48d319a4741dbb18d9fcf5e077025b1e27ab6b1"
+    },
+    {
+      "date": 1692728874614,
+      "name": "D:\\level-2-private-projects\\product-library-server\\logs\\winston\\success\\uw-2023-08-22-13.log",
+      "hash": "af163c929ff715a9495fa16a1ae2870601bfc5c0a9fe4ceb8fb7bda8a1e74769"
+    },
+    {
+      "date": 1692736233343,
+      "name": "D:\\level-2-private-projects\\product-library-server\\logs\\winston\\success\\uw-2023-08-22-15.log",
+      "hash": "2d1191f7ef135505201e2af185ee177ba16b013b0258603776a28129b66b7b50"
+    },
+    {
+      "date": 1692890462938,
+      "name": "D:\\level-2-private-projects\\product-library-server\\logs\\winston\\success\\uw-2023-08-24-10.log",
+      "hash": "bd4c78688061e8c8834cd95808a680ef057a12549cb3937ee6ea4a01aa9f7398"
+    }
+  ],
+  "hashType": "sha256"
 }

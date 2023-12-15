@@ -1,7 +1,7 @@
 import { z } from 'zod'
 
 import { ObjectId } from 'mongodb'
-const createBookZodSchema = z.object({
+const createproductZodSchema = z.object({
   body: z.object({
     title: z.string({
       required_error: 'title is required',
@@ -19,7 +19,7 @@ const createBookZodSchema = z.object({
   }),
 })
 
-const updateBookZodSchema = z.object({
+const updateproductZodSchema = z.object({
   body: z
     .object({
       title: z
@@ -46,7 +46,7 @@ const updateBookZodSchema = z.object({
     })
     .optional(),
 })
-export const bookValidation = {
-  createBookZodSchema,
-  updateBookZodSchema,
+export const productValidation = {
+  createproductZodSchema,
+  updateproductZodSchema,
 }

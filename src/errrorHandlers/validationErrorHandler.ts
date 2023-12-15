@@ -4,6 +4,7 @@ import { IgenericError } from '../interfaces/errorInterface'
 export const handleValidationError = (
   error: mongoose.Error.ValidationError
 ) => {
+  console.log('in validation error:', error)
   const errors = Object.values(error.errors)
   const listOfErrors: IgenericError[] = errors.map(
     (error: mongoose.Error.ValidatorError | mongoose.Error.CastError) => {

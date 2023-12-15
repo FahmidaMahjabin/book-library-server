@@ -1,5 +1,5 @@
-import { IBook, IBookFilter } from './book.interface'
-import { Book } from './book.model'
+import { Iproduct, IproductFilter } from './product.interface'
+import { Product } from './product.model'
 
 import config from '../../config/index'
 
@@ -9,14 +9,14 @@ import { ApiError } from '../../errrorHandlers/ApiErrorHandler'
 import bcrypt from 'bcrypt'
 import { ObjectId } from 'mongodb'
 import { IResponseForPagination } from '../../interfaces/pagination'
-import { searchableFields } from './book.constant'
-const addBook = async (book: IBook): Promise<IBook | null> => {
-  const result = await Book.create(book)
+import { searchableFields } from './product.constant'
+const addproduct = async (product: Iproduct): Promise<Iproduct | null> => {
+  const result = await Product.create(product)
 
   return result
 }
 
-const getAllBooks = async (filters: IBookFilter): Promise<IBook[]> => {
+const getAllproducts = async (filters: IproductFilter): Promise<Iproduct[]> => {
   const { searchTerm, ...filterableFields } = filters
   console.log('filterableFields:', filterableFields)
   const andConditions = []
@@ -44,29 +44,29 @@ const getAllBooks = async (filters: IBookFilter): Promise<IBook[]> => {
 
   // search condition
   const whereCondition = andConditions.length > 0 ? { $and: andConditions } : {}
-  const result = await Book.find(whereCondition).sort('dec').limit(10)
+  const result = await Product.find(whereCondition)
 
   return result
 }
-const getSingleBook = async (id: ObjectId) => {
-  const result = await Book.findById(id)
+const getSingleproduct = async (id: ObjectId) => {
+  const result = await Product.findById(id)
   return result
 }
-const updateBook = async (id: ObjectId, updateData: Partial<IBook>) => {
-  const result = await Book.findOneAndUpdate({ _id: id }, updateData, {
+const updateproduct = async (id: ObjectId, updateData: Partial<Iproduct>) => {
+  const result = await Product.findOneAndUpdate({ _id: id }, updateData, {
     new: true,
   })
   console.log('reslt:', result)
   return result
 }
-const deleteBook = async (id: ObjectId) => {
-  const result = await Book.findByIdAndDelete(id)
+const deleteproduct = async (id: ObjectId) => {
+  const result = await Product.findByIdAndDelete(id)
   return result
 }
-export const bookServices = {
-  addBook,
-  getAllBooks,
-  getSingleBook,
-  updateBook,
-  deleteBook,
+export const productServices = {
+  addproduct,
+  getAllproducts,
+  getSingleproduct,
+  updateproduct,
+  deleteproduct,
 }

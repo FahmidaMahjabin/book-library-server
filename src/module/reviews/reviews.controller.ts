@@ -1,90 +1,92 @@
 import { NextFunction, Request, RequestHandler, Response } from 'express'
-import { bookServices } from './book.service'
+import { reviewServices } from './reviews.service'
 
 import { catchAsync } from '../../shared/catchAsync'
 import { sendResponse } from '../../shared/sendResponse'
-import { IBook } from './book.interface'
+import { Ireview } from './reviews.interface'
 import { ObjectId } from 'mongodb'
 import { mapReqQuerysProperty } from '../../shared/pick'
-import { filterableFields, paginationFields } from './book.constant'
+import { filterableFields, paginationFields } from './reviews.constant'
 
-const addBookToDB: RequestHandler = catchAsync(
+const addreviewToDB: RequestHandler = catchAsync(
   async (req: Request, res: Response, next: NextFunction) => {
-    const bookData = req.body
-    const result = await bookServices.addBook(bookData)
+    const reviewData = req.body
+    const result = await reviewServices.addreview(reviewData)
 
-    sendResponse<IBook>(res, {
+    sendResponse<Ireview>(res, {
       statusCode: 200,
       success: true,
-      message: 'book added successfully',
+      message: 'review added successfully',
       data: result,
     })
   }
 )
 
-const updateBook: RequestHandler = catchAsync(
+const updatereview: RequestHandler = catchAsync(
   async (req: Request, res: Response, next: NextFunction) => {
     const { id } = await req.params
     const updateData = await req.body
     console.log('updateData:', updateData)
-    const result = await bookServices.updateBook(
+    const result = await reviewServices.updatereview(
       id as unknown as ObjectId,
       updateData
     )
-    sendResponse<IBook>(res, {
+    sendResponse<Ireview>(res, {
       statusCode: 200,
       success: true,
-      message: 'book updated successfully',
+      message: 'review updated successfully',
       data: result,
     })
   }
 )
 
-const deleteBook: RequestHandler = catchAsync(
+const deletereview: RequestHandler = catchAsync(
   async (req: Request, res: Response, next: NextFunction) => {
     const { id } = await req.params
-    const result = await bookServices.deleteBook(id as unknown as ObjectId)
-    sendResponse<IBook>(res, {
+    const result = await reviewServices.deletereview(id as unknown as ObjectId)
+    sendResponse<Ireview>(res, {
       statusCode: 200,
       success: true,
-      message: 'book deleted successfully',
+      message: 'review deleted successfully',
       data: result,
     })
   }
 )
 
-const getAllBooks: RequestHandler = catchAsync(
+const getAllreviews: RequestHandler = catchAsync(
   async (req: Request, res: Response, next: NextFunction) => {
     const filters = mapReqQuerysProperty(req.query, filterableFields)
 
     console.log('filters:', filters)
 
-    const result = await bookServices.getAllBooks(filters)
-    sendResponse<IBook[]>(res, {
+    const result = await reviewServices.getAllreviews(filters)
+    sendResponse<Ireview[]>(res, {
       statusCode: 200,
       success: true,
-      message: 'retrived all books  successfully',
+      message: 'retrived all reviews  successfully',
       data: result,
     })
   }
 )
 
-const getSingleBook: RequestHandler = catchAsync(
+const getSinglereview: RequestHandler = catchAsync(
   async (req: Request, res: Response, next: NextFunction) => {
     const { id } = await req.params
-    const result = await bookServices.getSingleBook(id as unknown as ObjectId)
-    sendResponse<IBook>(res, {
+    const result = await reviewServices.getSinglereview(
+      id as unknown as ObjectId
+    )
+    sendResponse<Ireview>(res, {
       statusCode: 200,
       success: true,
-      message: 'get one book  successfully',
+      message: 'get one review  successfully',
       data: result,
     })
   }
 )
-export const bookController = {
-  addBookToDB,
-  getAllBooks,
-  deleteBook,
-  getSingleBook,
-  updateBook,
+export const reviewController = {
+  addreviewToDB,
+  getAllreviews,
+  deletereview,
+  getSinglereview,
+  updatereview,
 }

@@ -1,39 +1,35 @@
 import { Schema, model } from 'mongoose'
-import { IBook, bookModel } from './book.interface'
+import { Ireview, reviewModel } from './reviews.interface'
 import config from '../../config'
 import bcrypt from 'bcrypt'
-const bookSchema = new Schema<IBook, bookModel>(
+const reviewSchema = new Schema<Ireview, reviewModel>(
   {
-    title: {
+    name: {
       type: String,
       required: true,
     },
-    author: {
+    rating: {
+      type: Number,
+      required: true,
+    },
+    comment: {
       type: String,
       required: true,
     },
-    genre: {
+    image: {
       type: String,
-      required: true,
-    },
-    publicationDate: {
-      type: String,
-      required: true,
-    },
-    reviews: {
-      type: [String],
     },
   },
   {
     timestamps: true,
   }
 )
-// book.create() and book.save() ei duita function e pre() method use kora jay. create model e and save() model theke instance create kore use korte hoy.
+// review.create() and review.save() ei duita function e pre() method use kora jay. create model e and save() model theke instance create kore use korte hoy.
 // pre() function ta database e save or create er age kaj kore.
 // important note: this use korte hole normal function use korte hobe not arrow function
 
-// bookSchema.pre('save', async function (next) {
-//   console.log('this from book:', this)
+// reviewSchema.pre('save', async function (next) {
+//   console.log('this from review:', this)
 //   this.password = await bcrypt.hash(
 //     this.password,
 //     Number(config.bcrypt_hash_salt_round)
@@ -41,4 +37,4 @@ const bookSchema = new Schema<IBook, bookModel>(
 
 //   next()
 // })
-export const Book = model<IBook, bookModel>('books', bookSchema)
+export const Review = model<Ireview, reviewModel>('reviews', reviewSchema)
